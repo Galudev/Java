@@ -80,6 +80,10 @@ public class Main {
 				return true;
 			}
 		}
+		if(((tab[1][1]!=' ')&&(tab[1][1]==tab[2][2])&&(tab[1][1]==tab[3][3]))||((tab[3][1]!=' ')&&(tab[3][1]==tab[2][2])&&(tab[3][1]==tab[1][3]))) {
+			System.out.println("¡Ha ganado el jugador " + player + "!");
+			return true;
+		}
 		return false;
 	}
 	
